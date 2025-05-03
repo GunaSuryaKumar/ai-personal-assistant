@@ -1,0 +1,8 @@
+Flask==2.3.3
+pyttsx3==2.90
+SpeechRecognition==3.10.0
+pyscreeze==0.1.28
+Pillow==10.0.1
+requests==2.31.0
+pyaudio==0.2.13
+gunicorn==20.1.0

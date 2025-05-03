@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-personal-assistant
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.7
+      - key: EDEN_AI_API_KEY
+        sync: false
+      - key: OPENWEATHERMAP_API_KEY
+        sync: false
+      - key: RENDER
+        value: true
